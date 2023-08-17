@@ -1,0 +1,15 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, "dress", 5, 50);
+INSERT INTO store VALUES (2, "pants", 10 , 80); 
+INSERT INTO store VALUES (3, "skirt", 10 , 50);
+INSERT INTO store VALUES (4, "tops", 10 , 40); 
+INSERT INTO store VALUES (5, "sweaters", 6 , 50); 
+
+--display the database ordered by price. 
+SELECT * FROM store 
+ORDER BY price DESC; 
+
+--what is the total amount of items in the store?
+SELECT SUM (quantity) 
+FROM store;
